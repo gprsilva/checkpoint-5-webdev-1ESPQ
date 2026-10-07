@@ -1,5 +1,7 @@
 import axios from "axios";
 
-const api = axios.create({
-    baseUrl: 'https://pokeapi.co/v2/'
-})
+const apiClient = axios.create({
+    baseURL: "https://pokeapi.co/api/v2",
+});
+
+export default apiClient;

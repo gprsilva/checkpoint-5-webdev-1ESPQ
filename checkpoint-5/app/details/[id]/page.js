@@ -1,39 +1,46 @@
-"use client"
-import { useSearchParams } from "next/navigation"
-import { useEffect, useState } from "react"
+"use client";
 
-function Page() {
-    const params = useSearchParams()
-    const nome = params.name
-    const id = params.id
+import { useState, useEffect } from "react";
+import { useParams, useRouter } from "next/navigation";
+import Link from "next/link";
+import apiClient from "@/app/utils/api";
 
-    const pokemon = [
-        nomePoke = nome,
-        IdPoke = id
-    ]
+
+export default function PokemonDetailPage() {
+    const router = useRouter();
+    const { id } = useParams();
+
+    const [pokemon, setPokemon] = useState(null);
 
     useEffect(() => {
-        async function carregar() {
-            const res = await axios.get(
-                "https://pokeapi.co/api/v2/pokemon/" + "$(pokemon.nomePoke)"
-            );
-            setData(res.data.data);
-            const pokemon2 = [
-                nomePoke = res.data.name,
-                IdPoke = res.data.id
-            ]
-            PageDetalhes(pokemon2)
-        }
-        carregar();
-    }, []);
-}
-export default function PageDetalhes(pokemon) {
+        apiClient
+            .get("/pokemon/" + id)
+            .then((response) => {
+                setPokemon(response.data);
+                setError("");
+            })
+            .catch(() => setError("Erro ao buscar o Pokémon."))
+            .finally(() => setLoading(false));
+        console.log("foi")
+    }, [id]);
+    console.log(pokemon)
 
     return (
         <div>
-            <li>Nome:{pokemon.nomePoke}</li>
-            <li>Id:{pokemon.IdPoke}</li>
-        </div>
-    )
 
+            <button onClick={() => router.back()}>
+                Voltar
+            </button>{" "}
+            <Link class="margin-left-10" href="/">Ir para o início</Link>
+
+            <div>
+                <h2 >
+                    <li>Id:{pokemon?.id}</li>
+                    <li>Nome:{pokemon?.name}</li>
+                </h2>
+                <p>Altura: {pokemon?.height}</p>
+                <p>Peso: {pokemon?.weight}</p>
+            </div>
+        </div>
+    );
 }
