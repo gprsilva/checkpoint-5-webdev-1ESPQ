@@ -1,4 +1,7 @@
-
+Participantes
+Guilherme Pereira RM:573360
+Gustavo Leal RM: 569361
+Antonio do Nascimento RM: 573706
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
