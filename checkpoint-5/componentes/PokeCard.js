@@ -4,13 +4,13 @@ import Link from "next/link";
 
 
 
-export default function PokeCard(key, pokemon){
+export default function PokeCard(key, pokemon) {
 
-    return(
+    return (
         <div>
-            <Link href={'/details/'+ pokemon.id}>
-                <p>{pokemon.id}</p>
-                <p>{pokemon.name}</p>
+            <Link href={'/details/' + pokemon?.id}>
+                <p>{pokemon?.id}</p>
+                <p>{pokemon?.name}</p>
             </Link>
         </div>
     )

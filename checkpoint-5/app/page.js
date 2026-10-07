@@ -1,13 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import api from "@/utils/api";
-import { toPokemon, sortPokemons } from "@/utils/api";
+
 import Header from "@/componentes/Header";
 import Filters from "@/componentes/Filters";
 import Loader from "@/componentes/Loader";
 import ErrorState from "@/componentes/ErrorState";
 import PokeList from "@/componentes/PokeList";
+import { sortPokemons, toPokemon } from "./utils/utils";
+import apiClient from "./utils/api";
 
 export default function HomePage() {
   const [pokemons, setPokemons] = useState([]);
@@ -16,7 +17,7 @@ export default function HomePage() {
   const [sortBy, setSortBy] = useState("id");
 
   useEffect(() => {
-    api
+    apiClient
       .get("/pokemon", { params: { limit: 20 } })
       .then((response) => setPokemons(response.data.results.map(toPokemon)))
       .catch(() => setError("Erro ao buscar os Pokémon."))
