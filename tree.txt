@@ -1,0 +1,38 @@
+checkpoint-5/
+checkpoint-5/.gitignore (480b)
+checkpoint-5/app/
+checkpoint-5/app/details/
+checkpoint-5/app/details/[id]/
+checkpoint-5/app/details/[id]/page.js (1228b)
+checkpoint-5/app/favicon.ico (25931b)
+checkpoint-5/app/globals.css (488b)
+checkpoint-5/app/layout.js (172b)
+checkpoint-5/app/page.js (1254b)
+checkpoint-5/app/utils/
+checkpoint-5/app/utils/api.js (134b)
+checkpoint-5/app/utils/utils.js (815b)
+checkpoint-5/componentes/
+checkpoint-5/componentes/ErrorState.js (249b)
+checkpoint-5/componentes/Filters.js (385b)
+checkpoint-5/componentes/Header.js (401b)
+checkpoint-5/componentes/Loader.js (68b)
+checkpoint-5/componentes/PokeCard.js (296b)
+checkpoint-5/componentes/PokeList.js (283b)
+checkpoint-5/componentes/SearchPoke.js (305b)
+checkpoint-5/eslint.config.mjs (400b)
+checkpoint-5/jsconfig.json (73b)
+checkpoint-5/next.config.mjs (144b)
+checkpoint-5/package-lock.json (239656b)
+checkpoint-5/package.json (494b)
+checkpoint-5/postcss.config.mjs (94b)
+checkpoint-5/public/
+checkpoint-5/public/file.svg (391b)
+checkpoint-5/public/globe.svg (1035b)
+checkpoint-5/public/next.svg (1375b)
+checkpoint-5/public/vercel.svg (128b)
+checkpoint-5/public/window.svg (385b)
+checkpoint-5/README.md (1458b)
+gitcontext.txt (2160b)
+package-lock.json (104b)
+participantes.md (98b)
+README.md (1624b)

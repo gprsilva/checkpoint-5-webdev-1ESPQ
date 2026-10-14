@@ -1,0 +1,172 @@
+{
+  "turma": "1ESPQ",
+  "project": "gprsilva-checkpoint-5-webdev-1ESPQ",
+  "hasGit": true,
+  "nextRoots": [
+    {
+      "pkgPath": "checkpoint-5/package.json",
+      "dir": "/Volumes/externo/FIAP/corretor-avaliacoes/turmas/2026/checkpoint-5/1ESPQ/gprsilva-checkpoint-5-webdev-1ESPQ/checkpoint-5",
+      "next": "16.3.8",
+      "axios": "^1.20.0",
+      "react": "19.2.8",
+      "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint"
+      }
+    }
+  ],
+  "components": [
+    {
+      "name": "ErrorState",
+      "file": "checkpoint-5/componentes/ErrorState.js",
+      "inComponents": true
+    },
+    {
+      "name": "Filters",
+      "file": "checkpoint-5/componentes/Filters.js",
+      "inComponents": true
+    },
+    {
+      "name": "Header",
+      "file": "checkpoint-5/componentes/Header.js",
+      "inComponents": true
+    },
+    {
+      "name": "Loader",
+      "file": "checkpoint-5/componentes/Loader.js",
+      "inComponents": true
+    },
+    {
+      "name": "PokeCard",
+      "file": "checkpoint-5/componentes/PokeCard.js",
+      "inComponents": true
+    },
+    {
+      "name": "PokeList",
+      "file": "checkpoint-5/componentes/PokeList.js",
+      "inComponents": true
+    },
+    {
+      "name": "SerachPoke",
+      "file": "checkpoint-5/componentes/SearchPoke.js",
+      "inComponents": true
+    }
+  ],
+  "componentCount": 7,
+  "componentsInComponentsFolder": 7,
+  "axiosHits": [
+    "checkpoint-5/app/utils/api.js:1: import axios from \"axios\";",
+    "checkpoint-5/app/utils/api.js:3: const apiClient = axios.create({",
+    "checkpoint-5/package-lock.json:11: \"axios\": \"^1.20.0\",",
+    "checkpoint-5/package-lock.json:2652: \"node_modules/axios\": {",
+    "checkpoint-5/package-lock.json:2654: \"resolved\": \"https://registry.npmjs.org/axios/-/axios-1.20.0.tgz\",",
+    "checkpoint-5/package.json:12: \"axios\": \"^1.20.0\","
+  ],
+  "fetchHits": [],
+  "useStateHits": [
+    "checkpoint-5/app/details/[id]/page.js:3: import { useState, useEffect } from \"react\";",
+    "checkpoint-5/app/details/[id]/page.js:13: const [pokemon, setPokemon] = useState(null);",
+    "checkpoint-5/app/page.js:3: import { useState, useEffect } from \"react\";",
+    "checkpoint-5/app/page.js:14: const [pokemons, setPokemons] = useState([]);",
+    "checkpoint-5/app/page.js:15: const [loading, setLoading] = useState(true);",
+    "checkpoint-5/app/page.js:16: const [error, setError] = useState(\"\");",
+    "checkpoint-5/app/page.js:17: const [sortBy, setSortBy] = useState(\"id\");",
+    "checkpoint-5/componentes/PokeList.js:3: import { useState, useEffect } from \"react\";"
+  ],
+  "useEffectHits": [
+    "checkpoint-5/app/details/[id]/page.js:3: import { useState, useEffect } from \"react\";",
+    "checkpoint-5/app/details/[id]/page.js:15: useEffect(() => {",
+    "checkpoint-5/app/page.js:3: import { useState, useEffect } from \"react\";",
+    "checkpoint-5/app/page.js:19: useEffect(() => {",
+    "checkpoint-5/componentes/PokeList.js:3: import { useState, useEffect } from \"react\";"
+  ],
+  "useRouterHits": [
+    "checkpoint-5/app/details/[id]/page.js:4: import { useParams, useRouter } from \"next/navigation\";",
+    "checkpoint-5/app/details/[id]/page.js:10: const router = useRouter();"
+  ],
+  "linkHits": [
+    "checkpoint-5/app/details/[id]/page.js:5: import Link from \"next/link\";",
+    "checkpoint-5/app/details/[id]/page.js:34: <Link class=\"margin-left-10\" href=\"/\">Ir para o início</Link>",
+    "checkpoint-5/componentes/Header.js:1: import Link from \"next/link\";",
+    "checkpoint-5/componentes/Header.js:9: <Link href=\"/search\" className=\"underline\"> Buscar</Link>",
+    "checkpoint-5/componentes/PokeCard.js:3: import Link from \"next/link\";",
+    "checkpoint-5/componentes/PokeCard.js:11: <Link href={'/details/' + pokemon?.id}>"
+  ],
+  "useClientHits": [
+    "checkpoint-5/app/details/[id]/page.js:1: \"use client\";",
+    "checkpoint-5/app/page.js:1: \"use client\";",
+    "checkpoint-5/componentes/PokeCard.js:1: \"use client\";",
+    "checkpoint-5/componentes/PokeList.js:1: \"use client\";"
+  ],
+  "useMemoHits": [],
+  "useCallbackHits": [],
+  "useRefHits": [],
+  "localStorageHits": [],
+  "loadingHints": [
+    "checkpoint-5/app/page.js:15: const [loading, setLoading] = useState(true);",
+    "checkpoint-5/app/page.js:32: {loading && <Loader />}",
+    "checkpoint-5/app/page.js:34: {!loading && !error && <PokeList pokemons={sortPokemons(pokemons, sortBy)} />}",
+    "checkpoint-5/componentes/Loader.js:2: return <p>Carregando...</p>;"
+  ],
+  "errorHints": [
+    "checkpoint-5/app/details/[id]/page.js:20: setError(\"\");",
+    "checkpoint-5/app/details/[id]/page.js:22: .catch(() => setError(\"Erro ao buscar o Pokémon.\"))",
+    "checkpoint-5/app/page.js:16: const [error, setError] = useState(\"\");",
+    "checkpoint-5/app/page.js:23: .catch(() => setError(\"Erro ao buscar os Pokémon.\"))",
+    "checkpoint-5/app/page.js:33: {error && <ErrorState message={error} />}",
+    "checkpoint-5/app/page.js:34: {!loading && !error && <PokeList pokemons={sortPokemons(pokemons, sortBy)} />}",
+    "checkpoint-5/package-lock.json:3641: \"zod-validation-error\": \"^3.5.0 || ^4.0.0\""
+  ],
+  "searchHints": [
+    "README.md:38: The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-tem",
+    "checkpoint-5/README.md:34: The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-tem",
+    "checkpoint-5/app/utils/utils.js:3: return url.split(\"/\").filter(Boolean).pop();",
+    "checkpoint-5/componentes/Header.js:9: <Link href=\"/search\" className=\"underline\"> Buscar</Link>",
+    "checkpoint-5/componentes/SearchPoke.js:1: export default function SerachPoke({ query, setQuery, inputRef }){",
+    "checkpoint-5/componentes/SearchPoke.js:7: value={query}",
+    "checkpoint-5/package-lock.json:2433: \"node_modules/aria-query\": {",
+    "checkpoint-5/package-lock.json:2435: \"resolved\": \"https://registry.npmjs.org/aria-query/-/aria-query-5.3.2.tgz\",",
+    "checkpoint-5/package-lock.json:2664: \"node_modules/axobject-query\": {",
+    "checkpoint-5/package-lock.json:2666: \"resolved\": \"https://registry.npmjs.org/axobject-query/-/axobject-query-4.1.0.tgz\",",
+    "checkpoint-5/package-lock.json:3574: \"aria-query\": \"^5.3.2\",",
+    "checkpoint-5/package-lock.json:3579: \"axobject-query\": \"^4.1.0\","
+  ],
+  "dynamicRoutes": [
+    "checkpoint-5/app/details/[id]/page.js"
+  ],
+  "honeypots": [],
+  "reduxVueClass": [],
+  "readmes": [
+    {
+      "path": "README.md",
+      "preview": "Participantes\nGuilherme Pereira RM:573360\nGustavo Leal RM: 569361\nAntonio do Nascimento RM: 573706\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).\n\n## Getting Started\n\nFirst, run the development server:\n\n```bash\nnpm run dev\n# or\nyarn dev\n# or\npnpm dev\n# or\nbun dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.\n\nYou can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.\n\nThis project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.\n\n## Learn More\n\nTo learn more about Next.js, take a look at the following resources:\n\n- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.\n- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.\n\nYou can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!\n\n## Deploy on Vercel\n\nThe easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.\n\nLink Vercel: (https://checkpoint-5-webdev-1-espq-six.vercel.app/)\n\nCheck ou"
+    },
+    {
+      "path": "checkpoint-5/README.md",
+      "preview": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).\n\n## Getting Started\n\nFirst, run the development server:\n\n```bash\nnpm run dev\n# or\nyarn dev\n# or\npnpm dev\n# or\nbun dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.\n\nYou can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.\n\nThis project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.\n\n## Learn More\n\nTo learn more about Next.js, take a look at the following resources:\n\n- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.\n- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.\n\nYou can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!\n\n## Deploy on Vercel\n\nThe easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.\n\nCheck out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.\n"
+    }
+  ],
+  "participantes": [
+    {
+      "path": "participantes.md",
+      "preview": "Participantes\nGuilherme Pereira RM:573360\nGustavo Leal RM: 569361\nAntonio do Nascimento RM: 573706"
+    }
+  ],
+  "vercelLinks": [
+    "https://vercel.com/font",
+    "https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme",
+    "https://checkpoint-5-webdev-1-espq-six.vercel.app/"
+  ],
+  "apiHints": [
+    "PokéAPI"
+  ],
+  "git": {
+    "commitCount": 21,
+    "branch": "main",
+    "remote": "origin\thttps://github.com/gprsilva/checkpoint-5-webdev-1ESPQ (fetch)\norigin\thttps://github.com/gprsilva/checkpoint-5-webdev-1ESPQ (push)",
+    "shortlog": "10\tLaboratório FIAP <labsfiap@fiap.com.br>\n     5\tGuilherme Pereira <165703261+gprsilva@users.noreply.github.com>\n     3\tLeal.l0g <gustavo998leal@gmail.com>\n     2\tAntonio <makaleiniko@gmail.com>\n     1\tGuilherme Pereira <gprsilva2008@gmail.com>",
+    "logOneline": "b448f8a Create participantes.md\n55f128a Update README.md participantes\n5fbd974 Atualizar o README.md\na784f8e Update README.md\ne11156f commit final\n3624062 Merge pull request #3 from gprsilva/feat/Guilherme\n28ac198 pagina detalhes\naf29d5d feat: error\n75f91b2 Remove content from README.md\n4049932 Remove React component code from README\n4867d3a page.js\n1f4cdf9 feat: error\n859e129 feat: filter\n88110c4 feat: Header\n6e56c2e feat: loader\n7988566 feat: Pesquisa\n28b41fb Merge pull request #1 from gprsilva/feat/Guilherme\ne99c6ce feat: Add o PokeList e o PokeCard\nc2c0bc4 detalhes e api\ncb2d367 chore: criação do projeto React\n6525b30 Initial commit"
+  }
+}

@@ -1,0 +1,69 @@
+# CONTEXTO GIT - 1ESPQ/gprsilva-checkpoint-5-webdev-1ESPQ
+# Path: /Volumes/externo/FIAP/corretor-avaliacoes/turmas/2026/checkpoint-5/1ESPQ/gprsilva-checkpoint-5-webdev-1ESPQ
+
+## git remote -v
+origin	https://github.com/gprsilva/checkpoint-5-webdev-1ESPQ (fetch)
+origin	https://github.com/gprsilva/checkpoint-5-webdev-1ESPQ (push)
+
+## git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+## git log --oneline -50 (default branch)
+b448f8a Create participantes.md
+55f128a Update README.md participantes
+5fbd974 Atualizar o README.md
+a784f8e Update README.md
+e11156f commit final
+3624062 Merge pull request #3 from gprsilva/feat/Guilherme
+28ac198 pagina detalhes
+af29d5d feat: error
+75f91b2 Remove content from README.md
+4049932 Remove React component code from README
+4867d3a page.js
+1f4cdf9 feat: error
+859e129 feat: filter
+88110c4 feat: Header
+6e56c2e feat: loader
+7988566 feat: Pesquisa
+28b41fb Merge pull request #1 from gprsilva/feat/Guilherme
+e99c6ce feat: Add o PokeList e o PokeCard
+c2c0bc4 detalhes e api
+cb2d367 chore: criação do projeto React
+6525b30 Initial commit
+
+## git shortlog -sn -e (HEAD)
+10	Laboratório FIAP <labsfiap@fiap.com.br>
+     5	Guilherme Pereira <165703261+gprsilva@users.noreply.github.com>
+     3	Leal.l0g <gustavo998leal@gmail.com>
+     2	Antonio <makaleiniko@gmail.com>
+     1	Guilherme Pereira <gprsilva2008@gmail.com>
+
+## git log --oneline --graph --all -20
+* b448f8a Create participantes.md
+* 55f128a Update README.md participantes
+* 5fbd974 Atualizar o README.md
+* a784f8e Update README.md
+* e11156f commit final
+*   3624062 Merge pull request #3 from gprsilva/feat/Guilherme
+|\  
+| * af29d5d feat: error
+| * 1f4cdf9 feat: error
+| * 859e129 feat: filter
+| * 88110c4 feat: Header
+| * 6e56c2e feat: loader
+| * 7988566 feat: Pesquisa
+* | 28ac198 pagina detalhes
+* | 75f91b2 Remove content from README.md
+* | 4049932 Remove React component code from README
+* | 4867d3a page.js
+* | 28b41fb Merge pull request #1 from gprsilva/feat/Guilherme
+|\| 
+| * e99c6ce feat: Add o PokeList e o PokeCard
+* | c2c0bc4 detalhes e api
+|/  
+* cb2d367 chore: criação do projeto React
+
+## contagem de commits HEAD
+21
